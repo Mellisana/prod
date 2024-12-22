@@ -34,7 +34,7 @@ public class ShopRepository {
         Product productToRemove = findById(id);
         if (productToRemove == null) {
             throw new NotFoundException("Элемент с id: " + id + " не найден"
-                    );
+            );
         }
         remove(id);
     }
